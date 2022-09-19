@@ -1,2 +1,7 @@
-# nextjs-personal-studies
-NextJs personal studies
+# Personal Next.Js Studies
+
+Some personal NextJs studies.
+
+## Projects
+
+
