@@ -1,7 +1,7 @@
 /**
  * file: components/layout.js
  * description: file responsible for the layout of the application
- * data: 01/01/2021
+ * data: 09/28/2022
  * author: Glaucia Lemos <Twitter: @glaucia_lemos86>
  */
 
