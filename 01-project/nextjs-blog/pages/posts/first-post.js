@@ -1,3 +1,10 @@
+/**
+ * file: pages/posts/first-post.js
+ * description: file responsible for the first post page.
+ * data: 10/08/2022
+ * author: Glaucia Lemos <Twitter: @glaucia_lemos86>
+ */
+
 import Link from 'next/link';
 import Head from 'next/head';
 import Layout from '../../components/layout';

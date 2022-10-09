@@ -1,3 +1,10 @@
+/**
+ * file: pages/index.js
+ * description: file responsible for the main application page.
+ * data: 10/08/2022
+ * author: Glaucia Lemos <Twitter: @glaucia_lemos86>
+ */
+
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/Layout';
 import utilStyles from '../styles/utils.module.css';
