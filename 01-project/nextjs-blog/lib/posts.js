@@ -8,7 +8,6 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import { EOF } from 'dns';
 
 const postsDirectory = path.join(process.cwd(), 'posts');
 
@@ -39,3 +38,15 @@ export function getSortedPostsData() {
         }
     });
 };
+
+export function getAllPostIds() {
+  const fileNames = fs.readdirSync(postsDirectory);
+
+  return fileNames.map((fileName) => {
+    return {
+      params: {
+        id: fileName.replace(/\.md$/, ''),
+      },
+    };
+  });
+}
