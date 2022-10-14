@@ -5,8 +5,8 @@
  * author: Glaucia Lemos <Twitter: @glaucia_lemos86>
  */
 
-import Layout from '../../components/Layout/layout';
-import { getAllPostIds, getPostData } from '../../lib/posts';
+import Layout from "../../components/Layout/layout";
+import { getAllPostIds, getPostData } from "../../lib/posts";
 
 export default function Post({ postData }) {
   return (
@@ -16,9 +16,11 @@ export default function Post({ postData }) {
       {postData.id}
       <br />
       {postData.date}
+      <br />
+      <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
     </Layout>
   );
-};
+}
 
 export async function getStaticPaths() {
   const paths = getAllPostIds();
@@ -27,10 +29,10 @@ export async function getStaticPaths() {
     paths,
     fallback: false,
   };
-};
+}
 
 export async function getStaticProps({ params }) {
-  const postData = getPostData(params.id);
+  const postData = await getPostData(params.id);
   return {
     props: {
       postData,
