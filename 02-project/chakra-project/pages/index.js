@@ -1,7 +1,8 @@
 import { Heading } from '@chakra-ui/react';
+import Hero from '../components/Hero';
 
 const Home = () => {
-  return <Heading>Welcome to Chakra + Next.Js</Heading>;
+  return <Hero />;
 };
 
 export default Home;
